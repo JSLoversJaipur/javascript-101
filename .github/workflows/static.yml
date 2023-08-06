@@ -24,6 +24,10 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    defaults:
+      run:
+      # Mobile folder working directory.
+        working-directory: docs
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -42,4 +46,4 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/book
+          publish_dir: ./book
