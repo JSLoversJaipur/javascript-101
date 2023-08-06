@@ -1,0 +1,89 @@
+<!-- Inline, Internal, and External JavaScript: A Comprehensive Guide -->
+
+<!-- JavaScript is a powerful scripting language that can be included in HTML documents in various ways. Let's explore the different methods of including JavaScript code in your web pages: inline, internal, and external. -->
+
+<!-- Inline JavaScript -->
+
+<!-- Inline JavaScript refers to writing JavaScript code directly within the HTML file using the <script> tag. This method is useful for small code snippets or specific functionality that needs to be applied to a particular element. -->
+
+<!-- Example 1: Inline JavaScript -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inline JavaScript</title>
+</head>
+<body>
+  <h1>Inline JavaScript Example</h1>
+  <button onclick="alert('Hello, World!')">Click me</button>
+</body>
+</html>
+
+<!-- In this example, the JavaScript code `alert('Hello, World!')` is added inline within the `onclick` attribute of the button element. When the button is clicked, the JavaScript code is executed, and an alert dialog is displayed. -->
+
+<!-- Internal JavaScript -->
+
+<!-- Internal JavaScript involves placing JavaScript code within the HTML file using the <script> tag in the <head> or <body> section. This method is suitable for larger code blocks or scripts that need to be used across multiple elements or pages. -->
+
+<!-- Example 2: Internal JavaScript -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internal JavaScript</title>
+  <script>
+    function greet() {
+      alert('Hello, World!');
+    }
+  </script>
+</head>
+<body>
+  <h1>Internal JavaScript Example</h1>
+  <button onclick="greet()">Click me</button>
+</body>
+</html>
+
+<!-- In this example, the JavaScript code is placed within the <script> tag in the <head> section of the HTML file. The `greet()` function is defined, and it is called when the button is clicked, resulting in an alert dialog displaying "Hello, World!". -->
+
+<!-- External JavaScript -->
+
+<!-- External JavaScript involves creating a separate .js file containing JavaScript code and linking it to the HTML file using the <script> tag. This method is ideal for organizing and reusing JavaScript code across multiple pages. -->
+
+<!-- Example 3: External JavaScript -->
+
+<!-- File: script.js -->
+function greet() {
+  alert('Hello, World!');
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>External JavaScript</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>External JavaScript Example</h1>
+  <button onclick="greet()">Click me</button>
+</body>
+</html>
+
+<!-- In this example, the JavaScript code is placed in a separate `script.js` file. The file is linked to the HTML document using the <script> tag with the `src` attribute pointing to the external JavaScript file. The `greet()` function is defined in the external file and called when the button is clicked, displaying the alert dialog with the message "Hello, World!". -->
+
+<!-- Best Practices and Considerations -->
+
+<!-- When working with JavaScript, consider the following best practices:
+
+- Separation of Concerns:
+  - It is generally recommended to separate HTML, CSS, and JavaScript code to improve code maintainability and reusability.
+
+- External Scripts:
+  - External JavaScript files are preferable for larger codebases as they promote better organization and facilitate code reuse.
+
+- Script Placement:
+  - By convention, JavaScript code is placed just before the closing </body> tag to ensure that the HTML content is loaded before executing the script.
+
+- Script Loading Order:
+  - When using external scripts, ensure that they are loaded in the correct order, especially if one script relies on another.
+
+Remember to write clean, well-structured, and maintainable JavaScript code regardless of the inclusion method.
