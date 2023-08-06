@@ -1,0 +1,6 @@
+[book]
+authors = ["Nakul Yadav","Janit Yadav"]
+language = "en"
+multilingual = false
+src = "src"
+title = "javscript 101"
