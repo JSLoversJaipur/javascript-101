@@ -1,7 +1,6 @@
 # Summary
 
-
-- [Getting Started](chapter_1.md)
-
-
+- [Introduction](README.md)
+- [Installation](./chapter_1.md)
+    - [Installation](./chapter_1.md)
 
