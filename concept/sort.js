@@ -9,8 +9,8 @@ const numbers = [5, 3, 8, 2, 1, 4];
 // The sort() method sorts the elements of an array in place and returns the sorted array. By default, it converts elements to strings and performs a Unicode character-based sorting.
 
 // Example:
-const sortedArray1 = numbers.sort();
-console.log(sortedArray1);
+const sortArray1 = numbers.sort();
+console.log(sortArray1);
 // Output: [1, 2, 3, 4, 5, 8]
 
 // Explanation:
@@ -31,8 +31,8 @@ console.log(reversedArray);
 // By providing a compare function as an argument to the sort() method, you can define custom sorting criteria. The compare function determines the order of elements during the sorting process.
 
 // Example:
-const sortedArray2 = numbers.sort((a, b) => a - b);
-console.log(sortedArray2);
+const sortArray2 = numbers.sort((a, b) => a - b);
+console.log(sortArray2);
 // Output: [1, 2, 3, 4, 5, 8]
 
 // Sorting Algorithms Code Documentation
@@ -40,7 +40,7 @@ console.log(sortedArray2);
 // This documentation provides an overview of various sorting algorithms, including explanations and examples for each algorithm.
 
 // Array for Sorting Examples
-const numbers = [5, 3, 8, 2, 1, 4];
+const count = [5, 3, 8, 2, 1, 4];
 
 // 1. Bubble Sort:
 // Bubble Sort is a simple sorting algorithm that repeatedly compares adjacent elements and swaps them if they are in the wrong order.
@@ -58,7 +58,7 @@ function bubbleSort(arr) {
   return arr;
 }
 
-const sortedArray1 = bubbleSort(numbers);
+const sortedArray1 = bubbleSort(count);
 console.log(sortedArray1);
 // Output: [1, 2, 3, 4, 5, 8]
 
