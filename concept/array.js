@@ -75,7 +75,7 @@ const matrix = [
 // Accessing Elements in a 2D Array:
 console.log(matrix[0][0]); // Output: 1
 console.log(matrix[1][2]); // Output: 6
-console.log(matrix[2][1]); // Output: 8
+console.log(matrix[2][1]); // 
 
 // Modifying Elements in a 2D Array:
 matrix[1][0] = 10;
